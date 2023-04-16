@@ -1,0 +1,10 @@
+Database: sisfo_akademik
+
+user : 
+  - id : int(11) AUTO_INCREMENT
+  - username : varchar(255)
+  - password : varchar(255)
+  - email : varchar(255)
+  - level : enum('admin','user')
+  - blokir : enum('N', 'Y')
+  - id_session : varchar(255)

@@ -5,7 +5,7 @@
  	public function __construct()
  	{
  		parent::__construct();
- 		$this->load->model('login_model');
+ 		$this->load->model('login_model');		
  	}
 
  	public function index()
@@ -17,7 +17,7 @@
  	public function proses_login()
  	{
  		$this->form_validation->set_rules('username', 'username', 'required');
- 		$this->form_validation->set_rules('username', 'password', 'required');
+ 		$this->form_validation->set_rules('password', 'password', 'required');
  		if ($this->form_validation->run() == FALSE) {
  		$this->load->view('templates_administrator/header');
  		$this->load->view('administrator/login');

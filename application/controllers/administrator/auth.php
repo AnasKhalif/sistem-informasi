@@ -16,8 +16,12 @@
  	}
  	public function proses_login()
  	{
- 		$this->form_validation->set_rules('username', 'username', 'required');
- 		$this->form_validation->set_rules('password', 'password', 'required');
+ 		$this->form_validation->set_rules('username', 'username', 'required',[
+ 			'required' => 'Username wajib diisi!'
+ 		]);
+ 		$this->form_validation->set_rules('password', 'password', 'required',[
+ 			'required' => 'Password wajib diisi!'
+ 		]);
  		if ($this->form_validation->run() == FALSE) {
  		$this->load->view('templates_administrator/header');
  		$this->load->view('administrator/login');
@@ -44,14 +48,30 @@
  				if ($sess_data['level'] == 'admin'){
  					redirect('administrator/dashboard');
  				}else {
- 					$this->session->set_flashdata('pesan', 'Maaf Username dan Password Anda Salah');
+ 					$this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Username atau Password Salah!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>');
  					redirect('administrator/auth');
  				}
  				
  			}else {
- 					$this->session->set_flashdata('pesan', 'Maaf Username dan Password Anda Salah');
+ 					$this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Username atau Password Salah!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>');
  					redirect('administrator/auth');
  			}
  		}
+ 	}
+
+ 	public function logout()
+ 	{
+ 		$this->session->sess_destroy();
+ 		redirect('administrator/auth');
  	}
  }

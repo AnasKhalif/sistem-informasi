@@ -8,3 +8,8 @@ user :
   - level : enum('admin','user')
   - blokir : enum('N', 'Y')
   - id_session : varchar(255)
+
+jurusan:
+  - id_jurusan int(11) AUTO_INCREMENT
+  - kode_jurusan varchar(3)
+  - nama_jurusan varchar(100)

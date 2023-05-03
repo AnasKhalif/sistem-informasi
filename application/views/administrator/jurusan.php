@@ -24,8 +24,8 @@
     			<td width="20px"><?php echo $no++ ?></td>
     			<td><?php echo $jrs->kode_jurusan ?></td>
     			<td><?php echo $jrs->nama_jurusan ?></td>
-    			<td width="20px"><div class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></div></td>
-    			<td width="20px"><div class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></div></td>
+    			<td width="20px"><?php echo anchor('administrator/jurusan/update/'.$jrs->id_jurusan,'<div class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></div>') ?></td>
+    			<td width="20px"><?php echo anchor('administrator/jurusan/delete/'.$jrs->id_jurusan,'<div class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></div>') ?></td>
     		</tr>
     	<?php endforeach; ?>
     </table>

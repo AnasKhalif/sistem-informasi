@@ -1,4 +1,8 @@
 <div class="container-fluid">
+
+	<div class="alert alert-success" role="alert">
+      <i class="fas fa-university"></i> Form Input Jurusan
+    </div>
 	
 	<form method="post" action="<?php echo base_url('administrator/jurusan/input_aksi') ?>">
 		<div class="form-group">

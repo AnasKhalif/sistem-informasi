@@ -25,7 +25,7 @@
 				<td><?php echo $prd->kode_prodi ?></td>
 				<td><?php echo $prd->nama_prodi ?></td>
 				<td><?php echo $prd->nama_jurusan ?></td>
-				<td width="20px"><?php echo anchor('administrator/prodi/upate/'.$prd->id_prodi,'<div class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></div>') ?></td>
+				<td width="20px"><?php echo anchor('administrator/prodi/update/'.$prd->id_prodi,'<div class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></div>') ?></td>
     			<td width="20px"><?php echo anchor('administrator/prodi/delete/'.$prd->id_prodi,'<div class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></div>') ?></td>
 			</tr>
 		<?php endforeach; ?>

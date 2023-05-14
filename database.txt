@@ -13,3 +13,16 @@ jurusan:
   - id_jurusan int(11) AUTO_INCREMENT
   - kode_jurusan varchar(3)
   - nama_jurusan varchar(100)
+
+prodi:
+  - id_prodi : int(11) AUTO_INCREMENT 
+  - kode_prodi : varchar(20)
+  - nama_prodi : varchar(25)
+  - nama_jurusan : varchar(25)
+
+matakuliah:
+  - kode_matakuliah : varchar(10)
+  - nama_matakuliah : varchar(10)
+  - sks : int(5)
+  - semester : int(10)
+  - nama_prodi : varchar(10) 

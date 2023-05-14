@@ -36,7 +36,7 @@
                         <h6 class="collapse-header">Menu Akademik:</h6>
                         <a class="collapse-item" href="<?php echo base_url('administrator/jurusan') ?>">Jurusan</a>
                         <a class="collapse-item" href="<?php echo base_url('administrator/prodi') ?>">Progam Studi</a>
-                        <a class="collapse-item" href="cards.html">Mata Kuliah</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/matakuliah') ?>">Mata Kuliah</a>
                         <a class="collapse-item" href="cards.html">Mahasiswa</a>
                         <a class="collapse-item" href="cards.html">Tahun Akademik</a>
                         <a class="collapse-item" href="cards.html">Progam Studi</a>

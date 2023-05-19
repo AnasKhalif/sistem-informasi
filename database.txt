@@ -26,3 +26,16 @@ matakuliah:
   - sks : int(5)
   - semester : int(10)
   - nama_prodi : varchar(10) 
+
+mahasiswa:
+  - id int(11) AUTO_INCREMENT
+  - nim : varchar(11)
+  - nama_lengkap : varchar(120)
+  - alamat : varchar(255)
+  - email : varchar(120)
+  - telepon : varchar(20)
+  - tempat_lahir : varchar(120)
+  - tanggal lahir : DATE
+  - jenis_kelamin : ENUM
+  - nama_prodi : varchar(120)
+

@@ -39,3 +39,9 @@ mahasiswa:
   - jenis_kelamin : ENUM
   - nama_prodi : varchar(120)
 
+tahun_akademik :
+  - id int(11) AUTO_INCREMENT
+  - tahun_akademik : varchar(20)
+  - semester : varchar(20)
+  - status : varchar(20)
+

@@ -5,7 +5,7 @@
     </div>
 
     <center class="mb-4">
-    	<legend class="mt-3"><strong>KARTU RENCANA STUD</strong>I</legend>
+    	<legend class="mt-3"><strong>KARTU RENCANA STUDI</strong>I</legend>
 
     	<table>
     	<tr>
@@ -49,7 +49,7 @@
     	 foreach($krs_data as $krs) : ?>
 
     		 <tr>
-    		 	<td width="20px"><?php echo $no ?></td>
+    		 	<td width="20px"><?php echo $no++; ?></td>
     		 	<td><?php echo $krs->kode_matakuliah ?></td>
     		 	<td><?php echo $krs->nama_matakuliah ?></td>
     		 	<td><?php echo $krs->sks; 

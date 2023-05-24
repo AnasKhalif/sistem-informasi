@@ -40,8 +40,14 @@ mahasiswa:
   - nama_prodi : varchar(120)
 
 tahun_akademik :
-  - id int(11) AUTO_INCREMENT
+  - id_tahun_akademik int(11) AUTO_INCREMENT
   - tahun_akademik : varchar(20)
   - semester : varchar(20)
   - status : varchar(20)
 
+krs :
+  - id_krs :INT(11) AUTO_INCREMENT
+  - id_tahun_akademik : INT(10)
+  - nim : varchar(10)
+  - kode_matakuliah : varchar(10)
+  - nilai : varchar (3)

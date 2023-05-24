@@ -9,7 +9,7 @@
 	<form method="post" action="<?php echo base_url('administrator/tahun_akademik/update_aksi') ?>">
 		<div class="form-group">
 			<label>Tahun Akademik</label>
-			<input type="hidden" name="id" class="form-control" value="<?php echo $ta->id ?>">
+			<input type="hidden" name="id_tahun_akademik" class="form-control" value="<?php echo $ta->id_tahun_akademik ?>">
 			<input type="text" name="tahun_akademik"  class="form-control" value="<?php echo $ta->tahun_akademik ?>">
 			<?php echo form_error('tahun_akademik', '<div class="text-danger small ml-3">') ?>
 		</div>

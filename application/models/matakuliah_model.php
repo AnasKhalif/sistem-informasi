@@ -33,4 +33,13 @@ class Matakuliah_model extends CI_model{
 		$this->db->where($where);
 		$this->db->delete($table);
 	}
+
+	public $table = 'matakuliah';
+	public $id = 'kode_matakuliah';
+
+	public function get_by_id($id)
+	{
+		$this->db->where($this->id,$id);
+		return $this->db->get($this->table)->row();
+	}
 }

@@ -57,3 +57,13 @@ transkip_nilai :
   - nim : varchar (15)
   - kode_matakuliah : varchar (15)
   - nilai : varchar (15)
+
+dosen : 
+  - id_dosen : INT (11) AUTO_INCREMENT
+  - nidn : varchar(50)
+  - nama_dosen : varchar(50)
+  - alamat : varchar(50)
+  - jenis_kelamin : varchar(50)
+  - email : varchar(100)
+  - telepon : varchar(50)
+  - photo : varchar(100)

@@ -51,3 +51,9 @@ krs :
   - nim : varchar(10)
   - kode_matakuliah : varchar(10)
   - nilai : varchar (3)
+
+transkip_nilai :
+  - id_transkip : INT (11) AUTO_INCREMENT
+  - nim : varchar (15)
+  - kode_matakuliah : varchar (15)
+  - nilai : varchar (15)

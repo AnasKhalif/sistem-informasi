@@ -75,6 +75,10 @@ identitas :
   - email : varchar(50)
   - telepon : varchar(50)
 
-
+tentang_kampus:
+  - id : INT(11) AUTO_INCREMENT
+  - sejarah : varchar(100)
+  - visi : varchar(250)
+  - misi : varchar(250)
 
 

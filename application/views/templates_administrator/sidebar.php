@@ -77,7 +77,7 @@
                         <h6 class="collapse-header">Menu Info Kampus:</h6>
                         <a class="collapse-item" href="<?php echo base_url('administrator/identitas') ?>">Identitas</a>
                         <a class="collapse-item" href="register.html">Kategori</a>
-                        <a class="collapse-item" href="forgot-password.html">Informasi Kampus</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/informasi') ?>">Informasi Kampus</a>
                         <a class="collapse-item" href="<?php echo base_url('administrator/tentang_kampus') ?>">Tentang Kampus</a>
                         <a class="collapse-item" href="blank.html">Fasilitas</a>
                         <a class="collapse-item" href="404.html">Materi Kuliah</a>

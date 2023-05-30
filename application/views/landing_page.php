@@ -108,3 +108,18 @@
     </div>
   </div>
 </div>
+
+<div class="row m-4 text-center">
+  
+  <?php foreach($informasi as $info) : ?>
+  <div class="card m-3" style="width: 18rem;">
+  <span class="display-2 text-center text-info"><i class="<?php echo $info->icon ?>"></i></span>
+  <div class="card-body">
+    <h5 class="card-title badge badge-info"><?php echo $info->judul_informasi ?></h5>
+    <p class="card-text"><?php echo $info->isi_informasi ?></p>
+    <a href="#" class="btn btn-primary">Selengkapnya...</a>
+  </div>
+</div>
+  <?php endforeach; ?>
+
+</div>

@@ -81,4 +81,18 @@ tentang_kampus:
   - visi : varchar(250)
   - misi : varchar(250)
 
+informasi : 
+  - id_informasi : INT(11) AUTO_INCREMENT
+  - icon : varchar(50)
+  - judul_informasi : varchar(50)
+  - isi_informasi : varchar(250)
+
+
+
+
+
+
+
+
+
 

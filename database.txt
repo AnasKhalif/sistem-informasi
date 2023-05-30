@@ -66,4 +66,15 @@ dosen :
   - jenis_kelamin : varchar(50)
   - email : varchar(100)
   - telepon : varchar(50)
-  - photo : varchar(100)
+  - photo : varchar
+
+identitas :
+  - id_identitas INT(11) AUTO_INCREMENT
+  - nama_website : varchar (50)
+  - alamat : varchar (100)
+  - email : varchar(50)
+  - telepon : varchar(50)
+
+
+
+

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-dark text-black-50">
+<nav class="navbar navbar-light bg-secondary text-black-50">
 
 	<?php foreach($identitas as $idn) : ?>
   <a class="navbar-brand"><strong><?php echo $idn->judul_website ?></strong></a>
@@ -36,13 +36,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo base_url('assets/img/slide1.jpg') ?>" class="d-block w-100" alt="...">
+      <img src="<?php echo base_url('assets/img/slide11.jpg') ?>" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide2.jpg') ?>" class="d-block w-100" alt="...">
+      <img src="<?php echo base_url('assets/img/slide22.jpg') ?>" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="<?php echo base_url('assets/img/slide3.jpg') ?>" class="d-block w-100" alt="...">
+      <img src="<?php echo base_url('assets/img/slide33.jpg') ?>" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -120,6 +120,41 @@
     <a href="#" class="btn btn-primary">Selengkapnya...</a>
   </div>
 </div>
+
   <?php endforeach; ?>
 
 </div>
+
+<form method="post" action="<?php echo base_url('landing_page/kirim_pesan') ?>">
+
+  <div class="row m-4">
+    <div class="col-md-8">
+      <div class="alert alert-primary">
+        <i class="fas fa-envelope-open-text"></i> HUBUNGI KAMI
+      </div>
+
+      <?php echo $this->session->flashdata('pesan') ?>
+
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" name="nama" class="form-control">
+        <?php echo form_error('nama','<div class="text-danger small">','</div>') ?>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" name="email" class="form-control">
+        <?php echo form_error('email','<div class="text-danger small">','</div>') ?>
+      </div>
+
+      <div class="form-group">
+        <label>Pesan</label>
+        <textarea type="text" name="pesan" class="form-control" rows="5"></textarea>
+        <?php echo form_error('pesan','<div class="text-danger small">','</div>') ?>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </div>
+  </div>
+  
+</form>

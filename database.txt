@@ -87,7 +87,11 @@ informasi :
   - judul_informasi : varchar(50)
   - isi_informasi : varchar(250)
 
-
+hubungi :
+  - id_hubungi : INT (11) AUTO_INCREMENT
+  - nama : varchar(50)
+  - email : varchar(50)
+  - pesan : varchar(250)
 
 
 
